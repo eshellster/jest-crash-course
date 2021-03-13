@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.13.10",
+    "got": "^11.8.2"
+  }
+}
