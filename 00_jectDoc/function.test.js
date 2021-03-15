@@ -12,7 +12,7 @@ const func = require("./function");
 const nameCheck = () => console.log("Checking Name...");
 
 describe("Checking Names", () => {
-  beforeEach(() => nameCheck());
+  // beforeEach(() => nameCheck());
 
   it("User is Jeff", () => {
     const user = "Jeff";

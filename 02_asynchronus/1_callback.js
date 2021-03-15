@@ -1,6 +1,6 @@
 function fetchUser(id, cb) {
   setTimeout(() => {
-    console.log("wait 1 sec.");
+    // console.log("wait 1 sec.");
     const user = {
       id: id,
       name: "User" + id,

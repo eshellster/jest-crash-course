@@ -1,7 +1,7 @@
-function fetchUser(id) {
+function fetchUserPromise(id) {
   return new Promise((resolver) => {
     setTimeout(() => {
-      console.log("wait 1 sec.");
+      // console.log("wait 1 sec.");
       const user = {
         id: id,
         name: "User" + id,
@@ -11,5 +11,14 @@ function fetchUser(id) {
     }, 1000);
   });
 }
+function fetchUserThrowError(id) {
+  return new Promise((resolver, reject) => {
+    setTimeout(() => {
+      // console.log("wait 1 sec.");
 
-module.exports = fetchUser;
+      reject("error reason");
+    }, 1000);
+  });
+}
+
+module.exports = { fetchUserPromise, fetchUserThrowError };
